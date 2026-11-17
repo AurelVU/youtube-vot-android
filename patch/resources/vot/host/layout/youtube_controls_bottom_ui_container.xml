@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yt="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/youtube_controls_bottom_ui_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+    <com.google.android.libraries.youtube.common.ui.TouchImageView
+        android:id="@+id/vot_translate_button"
+        style="@style/YouTubePlayerButton"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="0dp"
+        android:scaleType="center"
+        android:contentDescription="Перевести видео. Удерживайте для настроек"
+        android:src="@drawable/vot_translate"
+        yt:layout_constraintBottom_toTopOf="@+id/quick_actions_container"
+        yt:layout_constraintRight_toLeftOf="@+id/fullscreen_button" />
+    <com.google.android.libraries.youtube.common.ui.TouchImageView
+        android:id="@+id/vot_settings_button"
+        style="@style/YouTubePlayerButton"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="0dp"
+        android:scaleType="center"
+        android:contentDescription="Настройки перевода"
+        android:src="@android:drawable/ic_menu_preferences"
+        yt:layout_constraintBottom_toTopOf="@+id/quick_actions_container"
+        yt:layout_constraintRight_toLeftOf="@+id/fullscreen_button" />
+</android.support.constraint.ConstraintLayout>
